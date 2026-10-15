@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px #00000020;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  background: #e546ad;
+  color: rgb(17, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #f5f;
+}
+
+h2 {
+  color: #222;
+}
+
+p {
+  text-align: left;
+  color: #555;
+  padding: 5px;
+}
+
+.bouton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #2d0129;
+  color: rgb(107, 23, 89);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.bouton:hover {
+  background: #440e2a;
+}
