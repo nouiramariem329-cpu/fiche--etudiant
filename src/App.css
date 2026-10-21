@@ -7,13 +7,34 @@ body {
 
 .page {
   min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.page h1 {
+  color: #e546ad;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.liste-etudiants {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
 }
 
 .carte {
-  width: 350px;
+  flex: 1 1 350px;
+  max-width: 450px;
+  min-width: 0;
+  box-sizing: border-box;
   background: white;
   padding: 30px;
   border-radius: 20px;
@@ -21,22 +42,14 @@ body {
   box-shadow: 0 5px 20px #00000020;
 }
 
-.avatar {
-  width: 90px;
-  height: 90px;
-  margin: auto;
-  border-radius: 50%;
-  background: #e546ad;
-  color: rgb(17, 1, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-h1 {
-  color: #f5f;
+.photo-etudiant {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 h2 {
@@ -47,18 +60,19 @@ p {
   text-align: left;
   color: #555;
   padding: 5px;
+  overflow-wrap: anywhere;
 }
 
 .bouton {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 25px;
-  background: #2d0129;
-  color: rgb(107, 23, 89);
+  background: #440e2a;
+  color: white;
   text-decoration: none;
   border-radius: 10px;
 }
 
 .bouton:hover {
-  background: #440e2a;
+  background: #2d0129;
 }
