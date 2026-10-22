@@ -1,7 +1,10 @@
 
-
 import './App.css';
+
+import Header from './components/Header';
+import Navbar from './components/Navbar';
 import StudentCard from './components/StudentCard';
+import Footer from './components/Footer';
 
 function App() {
   const etudiants = [
@@ -33,25 +36,21 @@ function App() {
 
   return (
     <div className="page">
+      <Header />
+      <Navbar />
+
       <h1>Liste des étudiants</h1>
 
-      <div className="liste-etudiants">
+      <div className="liste-etudiants" id="etudiants">
         {etudiants.map((etudiant) => (
           <StudentCard
             key={etudiant.email}
-            nom={etudiant.nom}
-            age={etudiant.age}
-            email={etudiant.email}
-            specialite={etudiant.specialite}
-            niveau={etudiant.niveau}
-            groupe={etudiant.groupe}
-            etablissement={etudiant.etablissement}
-            ville={etudiant.ville}
-            telephone={etudiant.telephone}
-            photo={etudiant.photo}
+            {...etudiant}
           />
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 }

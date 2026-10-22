@@ -76,3 +76,24 @@ p {
 .bouton:hover {
   background: #2d0129;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0 25px;
+}
+
+.navbar a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #e546ad;
+  text-decoration: underline;
+}
+
