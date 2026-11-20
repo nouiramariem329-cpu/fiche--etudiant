@@ -80,13 +80,13 @@ function StudentCard(props) {
         </div>
       )}
 
-      <button
-        type="button"
-        className="bouton"
-        onClick={modifierNom}
-      >
-        Modifier le nom
-      </button>
+     <button
+  type="button"
+  className="bouton"
+  onClick={() => props.onModifier(props)}
+>
+  Modifier
+</button>
 
       <button
         type="button"

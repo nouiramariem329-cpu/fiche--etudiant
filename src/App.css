@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #eef2ff;
+  background: #b690af;
 }
 
 .page {
@@ -15,7 +15,7 @@ body {
 }
 
 .page h1 {
-  color: #e546ad;
+  color: #701d53;
   text-align: center;
   margin: 0 0 30px;
 }
@@ -53,12 +53,12 @@ body {
 }
 
 h2 {
-  color: #222;
+  color: #0b0b0b;
 }
 
 p {
   text-align: left;
-  color: #555;
+  color: #313030;
   padding: 5px;
   overflow-wrap: anywhere;
 }
@@ -86,7 +86,7 @@ p {
 }
 
 .navbar a {
-  color: #7c3aed;
+  color: #52279c;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -133,3 +133,86 @@ form button:hover {
   background: #2d0129;
 }
 
+
+/* Formulaire étudiant */
+
+.formulaire-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #b04c86;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #09090915;
+  box-sizing: border-box;
+}
+
+.formulaire-container h2 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: normal;
+  color: #0c0c0c;
+  margin: 0 0 20px;
+}
+
+.form-etudiant {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0;
+}
+
+.form-etudiant label {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #444;
+  margin-top: 8px;
+}
+
+.form-etudiant input,
+.form-etudiant select {
+  width: 100%;
+  padding: 11px;
+  background: white;
+  color: #835f7d;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-etudiant input:focus,
+.form-etudiant select:focus {
+  outline: none;
+  border-color: #e546ad;
+}
+
+.form-etudiant button {
+  align-self: center;
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.gestion-etudiants {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filtre-etudiants {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formulaire-container h2 {
+  background-color: #e970bf;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
